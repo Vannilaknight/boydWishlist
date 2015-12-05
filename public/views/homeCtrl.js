@@ -24,7 +24,7 @@ angular.module('app').controller('homeCtrl', function ($scope) {
             name: 'Xbox One Elite Wireless Controller',
             link: 'http://www.amazon.com/Xbox-One-Elite-Wireless-Controller/dp/B00ZDNNRB8',
             img: 'http://ecx.images-amazon.com/images/I/31O7kGYGMBL.jpg',
-            price: 264.99
+            price: 149.99
         },
         {
             name: 'Stagg SA30ACE-BK Electro-Acoustic Auditorium Guitar - Matte Black',

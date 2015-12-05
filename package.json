@@ -1,5 +1,5 @@
 {
-  "name": "TheTaylist",
+  "name": "boydwishlist",
   "version": "1.0.0",
   "description": "Wishlist for Taylor",
   "main": "server.js",
@@ -23,9 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Vannilaknight:sonic365@bitbucket.org/Vannilaknight/personsite.git"
+    "url": "git+https://github.com/Vannilaknight/boydWishlist.git"
   },
   "author": "Taylor Boyd",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Vannilaknight/personsite#readme"
+  "bugs": {
+    "url": "https://github.com/Vannilaknight/boydWishlist/issues"
+  },
+  "homepage": "https://github.com/Vannilaknight/boydWishlist#readme"
 }
