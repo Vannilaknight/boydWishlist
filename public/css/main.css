@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../assets/fonts/Comfortaa.ttf');
+}
+
+@font-face {
+    font-family: 'AlegreyaSans';
+    src: url('../assets/fonts/AlegreyaSans.ttf');
+}
+
+html {
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+.fa {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.item {
+    font-size: 18px;
+}
+
+.item-head > a {
+    font-size: 24px;
+    color: rgb(156, 39, 176);
+    text-decoration: none;
+}
+
+.pagination-box {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-view {
+    margin-top: 50px;
+}
+
+.vertical-center {
+    min-height: 80%;
+    min-height: 80vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.thumbnail{
+    border: 1px solid rgba(0,0,0,0);
+    padding: 0;
+}
+
+.thumbnail-sm {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.tay-stuff a{
+    color: #F77D23;
+}
+
+.tay-stuff .item-head > a{
+    color: #009AAA;
+}
+
+.ash-stuff a{
+    color: #FFA7A6;
+}
+
+.ash-stuff .item-head > a{
+    color: #948C28;
+}

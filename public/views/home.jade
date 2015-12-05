@@ -1,0 +1,56 @@
+.col-xs-6.tay-stuff
+    .page-header
+        h1 Taylor's Wishlist
+    input.form-control.input-lg(type='text', placeholder='Search Taylor\'s Wishlist', ng-model='taySearchItem')
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                td.col-md-2.item-head
+                    a(href='#')
+                        | Thumbnail
+                td.col-md-7.item-head
+                    a(href='#', ng-click="taySortType = 'name'; taySortReverse = !taySortReverse")
+                        | Item Name
+                        span.fa.fa-caret-down(ng-show="taySortType == 'name' && !taySortReverse")
+                        span.fa.fa-caret-up(ng-show="taySortType == 'name' && taySortReverse")
+                td.col-md-3.item-head
+                    a(href='#', ng-click="taySortType = 'price'; taySortReverse = !taySortReverse")
+                        | Price
+                        span.fa.fa-caret-down(ng-show="taySortType == 'price' && !taySortReverse")
+                        span.fa.fa-caret-up(ng-show="taySortType == 'price' && taySortReverse")
+        tbody
+            tr(ng-animate='animate',pagination-id="tayList", dir-paginate='item in tay | orderBy:taySortType:taySortReverse | filter:taySearchItem | itemsPerPage:5')
+                td.item
+                    img.img-responsive.thumbnail.thumbnail-sm(style='background-image: url({{ item.img }})')
+                td.item
+                    a(href='{{ item.link }}', target="_blank") {{ item.name }}
+                td.item {{ item.price | currency:'$':2 }}
+    dir-pagination-controls.pagination-box(max-size='maxSize', boundary-links='true', direction-links='true', pagination-id="tayList")
+.col-xs-6.ash-stuff
+    .page-header
+        h1 Ashley's Wishlist
+    input.form-control.input-lg(type='text', placeholder='Search Ashley\'s Wishlist', ng-model='ashSearchItem')
+    table.table.table-bordered.table-striped
+        thead
+            tr
+                td.col-md-2.item-head
+                    a(href='#')
+                        | Thumbnail
+                td.col-md-7.item-head
+                    a(href='#', ng-click="ashSortType = 'name'; ashSortReverse = !ashSortReverse")
+                        | Item Name
+                        span.fa.fa-caret-down(ng-show="ashSortType == 'name' && !ashSortReverse")
+                        span.fa.fa-caret-up(ng-show="ashSortType == 'name' && ashSortReverse")
+                td.col-md-3.item-head
+                    a(href='#', ng-click="sortType = 'price'; ashSortReverse = !ashSortReverse")
+                        | Price
+                        span.fa.fa-caret-down(ng-show="ashSortType == 'price' && !ashSortReverse")
+                        span.fa.fa-caret-up(ng-show="ashSortType == 'price' && ashSortReverse")
+        tbody
+            tr(ng-animate='animate', pagination-id="ashList", dir-paginate='item in ash | orderBy:ashSortType:ashSortReverse | filter:ashSearchItem | itemsPerPage:5')
+                td.item
+                    img.thumbnail.thumbnail-sm(style='background-image: url({{ item.img }})')
+                td.item
+                    a(href='{{ item.link }}', target="_blank") {{ item.name }}
+                td.item {{ item.price | currency:'$':2 }}
+    dir-pagination-controls.pagination-box(max-size='maxSize', boundary-links='true', direction-links='true', pagination-id="ashList")
